@@ -37,7 +37,7 @@
 
 ----
 
-- If you already have your corne - sofle - lily58 configured with this repository and want to make
+- If you already have your corne - sofle - lily58 configured with this repository and want to make n
 a modification to your keymap, you can do it with the online [ZMK-STUDIO](https://zmk.studio/).
 
 - If you already have your corne - sofle - lily58 configured with this repository and want to make
