@@ -115,9 +115,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - '&bl BL_TOG'
+  - '&bl BL_DEC'
+  - '&bl BL_INC'
   - ''
   - F1
   - F2
