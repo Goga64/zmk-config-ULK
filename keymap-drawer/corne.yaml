@@ -59,10 +59,10 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:backspace-outline$$
   - LSHIFT
-  - BT 1
-  - BT 2
-  - BT 3
-  - $$mdi:backspace-outline$$
+  - ''
+  - ''
+  - ''
+  - {t: functional, h: toggle}
   - $$mdi:backspace-outline$$
   - {t: lower, h: toggle}
   - ←
@@ -89,12 +89,12 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   functional:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Esc
+  - Esc
+  - Q
+  - W
+  - E
+  - R
   - F7
   - F8
   - F9
@@ -102,11 +102,11 @@ layers:
   - ''
   - ''
   - Caps Lock
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
   - F4
   - F5
   - F6
@@ -114,20 +114,20 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - '&bl BL_TOG'
-  - '&bl BL_DEC'
-  - '&bl BL_INC'
-  - ''
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
   - F1
   - F2
   - F3
   - F10
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-command$$
   - {type: held}
-  - {t: ▽, type: trans}
+  - ␣
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
