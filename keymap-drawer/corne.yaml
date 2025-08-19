@@ -62,7 +62,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: functional, h: toggle}
+  - ''
   - $$mdi:backspace-outline$$
   - {t: lower, h: toggle}
   - ←
@@ -99,8 +99,8 @@ layers:
   - F8
   - F9
   - F12
-  - ''
-  - ''
+  - {t: lower, h: toggle}
+  - {t: raise, h: toggle}
   - Caps Lock
   - $$mdi:apple-keyboard-shift$$
   - A
