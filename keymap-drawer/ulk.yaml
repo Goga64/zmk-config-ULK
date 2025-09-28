@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: corne}
+layout: {zmk_keyboard: ulk}
 layers:
   default: [Esc, Q, W, E, R, T, Y, U, I, O, ;, Ctl+⌫, '$$mdi:apple-keyboard-shift$$', A, S, D, F, G, H, J, K, L, P, ⌦, '$$mdi:apple-keyboard-control$$', Z, X, C,
     V, B, N, M, ',', ., /, '''', '$$mdi:apple-keyboard-command$$', lower, ␣, ⏎, raise, LEFT ALT]
