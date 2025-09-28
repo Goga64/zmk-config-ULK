@@ -1,8 +1,6 @@
-# configuration for https://github.com/caksoylar/keymap-drawer
 keyboards:
-  - zmk_keyboard: ulk
-    physical_layout: corne
-
+  zmk_keyboard: ulk
+  physical_layout: corne
 
 draw_config:
   footer_text: 'Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
@@ -34,19 +32,7 @@ draw_config:
       text-rendering: optimizeLegibility;
     }
 
-    /* Color accent for held keys
-    red = #f00
-    green = #0f0
-    blue = #00f
-    yellow = #ff0
-    cyan = #0ff
-    magenta = #f0f
-    white = #fff
-    black = #000
-    grey = #888
-    light grey = #ccc
-    #ffc
-    */
+    /* Color accent for held keys */
     rect.held, rect.combo.held {
         fill: #f00;
     }
@@ -128,6 +114,7 @@ draw_config:
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
+
 parse_config:
   raw_binding_map:
     '&sys_reset': Reset
@@ -162,7 +149,6 @@ parse_config:
     'DISPLAY_RIGHT': {t: $$mdi:television-classic$$, h: $$mdi:arrow-right$$, type: tap_dance}
     'DISPLAY_SPACE': {t: $$mdi:television-classic$$, h: $$mdi:keyboard-space$$, type: tap_dance}
 
-
     # Rgb
     '&rgb_ug RGB_TOG': {t: $$mdi:led-on$$, h: $$mdi:toggle-switch$$, s: $$mdi:led-outline$$, type: toggle}
     '&rgb_ug RGB_VAI': {t: $$mdi:led-on$$, s: $$tabler:brightness-up$$, type: sym_by_sym}
@@ -183,256 +169,4 @@ parse_config:
     '&rgb_ug RGB_DOWN': {t: $$mdi:led-on$$, h: $$mdi:arrow-down$$, type: tap_dance}
     '&rgb_ug RGB_LEFT': {t: $$mdi:led-on$$, h: $$mdi:arrow-left$$, type: tap_dance}
     '&rgb_ug RGB_RIGHT': {t: $$mdi:led-on$$, h: $$mdi:arrow-right$$, type: tap_dance}
-    '&rgb_ug RGB_SPACE': {t: $$mdi:led-on$$, h: $$mdi:keyboard-space$$, type: tap_dance}
-    '&rgb_ug RGB_COLOR_HSB(0,0,100)': {t: $$mdi:led-on$$, h: $$mdi:palette$$, type: tap_dance}
-    '&rgb_ug RGB_COLOR_HSB(224,100,100)': {t: $$mdi:led-on$$, h: $$mdi:palette$$, type: tap_dance}
-
-    # Mouse
-    'U_WH_L': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-left$$, type: tap_dance}
-    'U_WH_R': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-right$$, type: tap_dance}
-    'U_WH_U': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-up$$, type: tap_dance}
-    'U_WH_D': {t: $$mdi:mouse-outline$$, h: $$mdi:arrow-down$$, type: tap_dance}
-    'U_MS_L': {t: $$mdi:mouse$$, h: $$mdi:arrow-left$$, type: tap_dance}
-    'U_MS_D': {t: $$mdi:mouse$$, h: $$mdi:arrow-down$$, type: tap_dance}
-    'U_MS_R': {t: $$mdi:mouse$$, h: $$mdi:arrow-right$$, type: tap_dance}
-    'U_MS_U': {t: $$mdi:mouse$$, h: $$mdi:arrow-up$$, type: tap_dance}
-    'CLICK_LEFT': $$mdi:cursor-default-click$$
-    'CLICK_RIGHT': $$mdi:cursor-default-click-outline$$
-    'CLICK_MIDDLE': $$mdi:cursor-default-click-outline$$
-    # '&mmv MOVE_UP': Mouse ↑
-    # '&mmv MOVE_DOWN': Mouse ↓
-    # '&mmv MOVE_LEFT': Mouse ←
-    # '&mmv MOVE_RIGHT': Mouse →
-
-    # '&msc SCRL_UP': Scroll ↑
-    # '&msc SCRL_DOWN': Scroll ↓
-    # '&msc SCRL_LEFT': Scroll ←
-    # '&msc SCRL_RIGHT': Scroll →
-
-    # '&mkp MCLK': Middle Click
-    # '&mkp MB4': Back Click
-    # '&mkp MB5': Forward Click
-
-
-    # layers
-    'MEDIA_ESC': {t: $$mdi:keyboard-esc$$, h: $$mdi:music-note$$}
-    'MOUSE_TAB': {t: $$mdi:keyboard-tab$$, h: $$mdi:mouse$$}
-    'NUMBER_SPACE': {t: $$mdi:keyboard-space$$, h: $$mdi:numeric$$}
-    '&mo _FUNCTION': $$mdi:function-variant$$
-    '&mo _CONFIG': $$mdi:cog$$
-    '&mo _LOCK': $$mdi:lock$$
-    '&mo _SYMBOL': $$mdi:symbol$$
-    '&mo _DISPLAY': $$mdi:television-classic$$
-    '&mo _OLED': $$mdi:television-classic$$
-    '&mo _LINUX': $$mdi:linux$$
-    '&mo _RGB': $$mdi:led-on$$
-    'DE_CAPS': $$mdi:keyboard-caps$$
-    'TAB': $$mdi:keyboard-tab$$
-    '&mt LSHFT COMMA': {t: $$mdi:google-downasaur$$, h: $$mdi:apple-keyboard-shift$$, type: tap_dance}
-
-    # CONTROL CMD/WINDOWS SHIFT ALT/META/OPTION
-    '&kp LSHFT': $$mdi:apple-keyboard-shift$$
-    '&kp LCTRL': $$mdi:apple-keyboard-control$$
-    '&kp RCTRL': $$mdi:apple-keyboard-control$$
-    '&kp LGUI': $$mdi:apple-keyboard-command$$
-    '&kp RGUI': $$mdi:apple-keyboard-command$$
-    '&kp LALT': $$mdi:apple-keyboard-option$$
-    '&kp RALT': $$mdi:apple-keyboard-option$$
-    '&kp RSHFT': $$mdi:apple-keyboard-shift$$
-    '&kp BSPC': $$mdi:backspace-outline$$
-
-  qmk_keycode_map:
-    XXXXXXX: ''
-    'NO': ''
-    MINUS: '-'
-    MINS: '-'
-    EQUAL: '='
-    EQL: '='
-    LEFT_BRACKET: '['
-    LBRC: '['
-    RIGHT_BRACKET: ']'
-    RBRC: ']'
-    BACKSLASH: \
-    BSLS: \
-    NONUS_HASH: '#'
-    NUHS: '#'
-    SEMICOLON: ;
-    SCLN: ;
-    QUOTE: ''''
-    QUOT: ''''
-    GRAVE: '`'
-    GRV: '`'
-    COMMA: ','
-    COMM: ','
-    DOT: .
-    SLASH: /
-    SLSH: /
-    TILDE: '~'
-    TILD: '~'
-    EXCLAIM: '!'
-    EXLM: '!'
-    AT: '@'
-    HASH: '#'
-    DOLLAR: $
-    DLR: $
-    PERCENT: '%'
-    PERC: '%'
-    CIRCUMFLEX: ^
-    CIRC: ^
-    AMPERSAND: '&'
-    AMPR: '&'
-    ASTERISK: '*'
-    ASTR: '*'
-    LEFT_PAREN: (
-    LPRN: (
-    RIGHT_PAREN: )
-    RPRN: )
-    UNDERSCORE: _
-    UNDS: _
-    PLUS: +
-    LEFT_CURLY_BRACE: '{'
-    LCBR: '{'
-    RIGHT_CURLY_BRACE: '}'
-    RCBR: '}'
-    PIPE: '|'
-    COLON: ':'
-    COLN: ':'
-    DOUBLE_QUOTE: '"'
-    DQUO: '"'
-    DQT: '"'
-    LEFT_ANGLE_BRACKET: <
-    LABK: <
-    LT: <
-    RIGHT_ANGLE_BRACKET: '>'
-    RABK: '>'
-    GT: '>'
-    QUESTION: '?'
-    QUES: '?'
-
-  zmk_combos:
-    combo_tab:    {align: top, o: 0.15}
-    combo_del:    {align: top, o: 0.15}
-    combo_f12:    {align: bottom}
-    combo_btclr:  {align: bottom}
-    combo_play:   {align: right}
-    combo_capswd: {draw_separate: true}
-    combo_semi:   {draw_separate: true}
-    combo_grave:  {draw_separate: true}
-    combo_lpar:   {draw_separate: true}
-    combo_rpar:   {draw_separate: true}
-    combo_lbkt:   {draw_separate: true}
-    combo_rbkt:   {draw_separate: true}
-    combo_tab:    {draw_separate: true}
-    combo_del:    {draw_separate: true}
-    combo_esc:    {draw_separate: true}
-    combo_ret:    {draw_separate: true}
-    combo_lock:   {draw_separate: true}
-    combo_bslh:   {draw_separate: true}
-    combo_slsh:   {draw_separate: true}
-
-  zmk_keycode_map:
-
-    # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
-    C_AL_CALC: Calc
-    # C_PP: Play Pause
-
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LALT: Alt
-    RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
-    ESC: Esc
-    SPACE: ␣
-    BSPC: ⌫
-    RET: ⏎
-    TAB: ↹
-    DEL: ⌦
-
-    PG_UP: Page Up
-    PG_DN: Page Down
-    INS: Insert
-    HOME: Home
-    END: End
-    CAPS: Caps Lock
-    PSCRN: Print Scrn
-    PAUSE_BREAK: Pause Break
-
-    UP: ↑
-    DOWN: ↓
-    LEFT: ←
-    RIGHT: →
-
-    C_PP: ⏯
-    C_NEXT: ⏭️
-    C_PREV: ⏮️
-
-    # defaults
-    # AMPERSAND: '&'
-    # AMPS: '&'
-    APOS: "'"
-    APOSTROPHE: "'"
-    ASTERISK: '*'
-    ASTRK: '*'
-    AT: '@'
-    AT_SIGN: '@'
-    BACKSLASH: \
-    BSLH: \
-    CARET: ^
-    COLON: ':'
-    COMMA: ','
-    DLLR: $
-    DOLLAR: $
-    DOT: .
-    DOUBLE_QUOTES: '"'
-    DQT: '"'
-    EQUAL: '='
-    EXCL: '!'
-    EXCLAMATION: '!'
-    FSLH: /
-    GRAVE: '`'
-    GREATER_THAN: '>'
-    GT: '>'
-    HASH: '#'
-    LBKT: '['
-    LBRC: '{'
-    LEFT_BRACE: '{'
-    LEFT_BRACKET: '['
-    LEFT_PARENTHESIS: (
-    LESS_THAN: <
-    LPAR: (
-    LT: <
-    MINUS: '-'
-    NON_US_BACKSLASH: \
-    NON_US_BSLH: '|'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    PERCENT: '%'
-    PERIOD: .
-    PIPE: '|'
-    PIPE2: '|'
-    PLUS: +
-    POUND: '#'
-    PRCNT: '%'
-    QMARK: '?'
-    QUESTION: '?'
-    RBKT: ']'
-    RBRC: '}'
-    RIGHT_BRACE: '}'
-    RIGHT_BRACKET: ']'
-    RIGHT_PARENTHESIS: )
-    RPAR: )
-    SEMI: ;
-    SEMICOLON: ;
-    SINGLE_QUOTE: ''''
-    SLASH: /
-    SQT: ''''
-    STAR: '*'
-    TILDE: '~'
-    TILDE2: '~'
-    UNDER: _
-    UNDERSCORE: _
+    '&rgb_ug RGB_SPACE': {t: $$mdi:led-on$$, h: $$mdi:keyboard-space

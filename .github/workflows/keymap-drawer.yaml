@@ -10,8 +10,7 @@ on:
       - "config/*.keymap"
       - "config/config_keymap-drawer.yaml"
       - .github/workflows/keymap-drawer.yaml
-      - parse_args: "corne:'' ulk:''"
-      - draw_args: "corne:'' ulk:'-k corne'"
+
 
 
 jobs:
