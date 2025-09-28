@@ -5,8 +5,8 @@ layers:
   lower:
   - ↹
   - Alt+↹
-  - Boot
-  - Reset
+  - ''
+  - ''
   - '&soft_off'
   - Vol Up
   - '7'
@@ -59,11 +59,11 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:backspace-outline$$
   - LSHIFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$mdi:backspace-outline$$
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_RIGHT'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
+  - '&mkp LCLK'
   - {t: lower, h: toggle}
   - ←
   - ↓
@@ -71,11 +71,11 @@ layers:
   - '|'
   - '`'
   - $$mdi:apple-keyboard-control$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_DOWN'
+  - '&mkp RCLK'
   - '['
   - ']'
   - '{'
@@ -115,9 +115,9 @@ layers:
   - F17
   - ''
   - ''
-  - '&bl BL_TOG'
-  - '&bl BL_DEC'
-  - '&bl BL_INC'
+  - ''
+  - ''
+  - ''
   - ''
   - F1
   - F2
