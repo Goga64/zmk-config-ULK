@@ -1,8 +1,4 @@
 # configuration for https://github.com/caksoylar/keymap-drawer
-keyboards:
-  - zmk_keyboard: ulk
-    physical_layout: corne
-
 
 draw_config:
   footer_text: 'Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
