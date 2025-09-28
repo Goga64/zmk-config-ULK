@@ -68,12 +68,15 @@ include:
     shield: corne_left_peripheral nice_oled
     artifact-name: nice_corne_left_peripheral_oled
 
-        # peripheral_left + nice_nano_v2 + nice_oled
+
+
   - board: nice_nano_v2
     shield: ulk_left
     artifact-name: ulk_left
  
-
+  - board: nice_nano_v2
+    shield: ulk_right
+    artifact-name: ulk_right
 
 
 
