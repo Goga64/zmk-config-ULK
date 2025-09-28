@@ -1,5 +1,7 @@
 #     keymap -c config/config_keymap-drawer.yaml parse -c 12 -z config/corne.keymap > keymap-drawer/corne.yaml
 #     keymap -c config/config_keymap-drawer.yaml draw keymap-drawer/corne.yaml > keymap-drawer/corne.svg
+keymap -c config/config_keymap-drawer.yaml parse -c 12 -z config/ulk.keymap > keymap-drawer/ulk.yaml
+keymap -c config/config_keymap-drawer.yaml draw keymap-drawer/ulk.yaml -k corne > keymap-drawer/ulk.svg
 
 # Example for using the keymap-drawer ZMK user config workflow
 name: Draw ZMK keymaps
