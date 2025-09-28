@@ -2,8 +2,8 @@
 
 For documentation go to [Orgin](https://github.com/mctechnology17/zmk-config)
 
-## keymap ULK
+## Keymap ULK
 [![keymap-drawer-demo-corne](keymap-drawer/ulk.svg)]
-## keymap corne
+## Keymap corne
 [![keymap-drawer-demo-corne](keymap-drawer/corne.svg)]
 
