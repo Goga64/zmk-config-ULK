@@ -1,5 +1,4 @@
-# Copyright (c) 2020 Pete Johanson
-# SPDX-License-Identifier: MIT
+
 
 config SHIELD_ULK_LEFT
     def_bool $(shields_list_contains,ulk_left)
