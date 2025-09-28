@@ -1,8 +1,8 @@
 # .github/workflows/keymap-drawer.yaml
 name: Draw ZMK keymaps
 on:
-  workflow_dispatch: # can be triggered manually
-  push: # automatically run on changes to following paths
+  workflow_dispatch:
+  push:
     paths:
       - "config/*.keymap"
       - "config/config_keymap-drawer.yaml"
@@ -15,10 +15,9 @@ jobs:
       contents: write
     with:
       amend_commit: true
-      # space-separated, all on one line
       keymap_patterns: "config/corne.keymap config/ulk.keymap"
       config_path: "config/config_keymap-drawer.yaml"
       output_folder: "keymap-drawer"
       parse_args: ""
-      # space-separated map of board->layout args
-      draw_args: "corne:'-k corne' ulk:'-k corne'"
+      # use -z instead of -k since these are ZMK boards
+      draw_args: "corne:'-z corne' ulk:'-z corne'"
