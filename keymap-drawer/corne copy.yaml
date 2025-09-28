@@ -1,0 +1,176 @@
+layout: {zmk_keyboard: corne}
+layers:
+  default: [Esc, Q, W, E, R, T, Y, U, I, O, ;, Ctl+⌫, '$$mdi:apple-keyboard-shift$$', A, S, D, F, G, H, J, K, L, P, ⌦, '$$mdi:apple-keyboard-control$$', Z, X, C,
+    V, B, N, M, ',', ., /, '''', '$$mdi:apple-keyboard-command$$', lower, ␣, ⏎, raise, LEFT ALT]
+  lower:
+  - ↹
+  - Alt+↹
+  - Boot
+  - Reset
+  - '&soft_off'
+  - Vol Up
+  - '7'
+  - '8'
+  - '9'
+  - KP PLUS
+  - '-'
+  - KP MULTIPLY
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - ⏮️
+  - ⏯
+  - ⏭️
+  - Vol Down
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - '='
+  - KP DIVIDE
+  - $$mdi:apple-keyboard-control$$
+  - ''
+  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:palette$$', type: tap_dance}
+  - RGB COLOR HSB(359,100,100)
+  - {t: raise, h: toggle}
+  - '1'
+  - '2'
+  - '3'
+  - KP DOT
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {type: held}
+  - Alt+␣
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:backspace-outline$$
+  raise:
+  - ↹
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - AMPS
+  - ↑
+  - )
+  - {t: ▽, type: trans}
+  - $$mdi:backspace-outline$$
+  - LSHIFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:backspace-outline$$
+  - {t: lower, h: toggle}
+  - ←
+  - ↓
+  - →
+  - '|'
+  - '`'
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
+  - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
+  - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
+  - BT CLR
+  - '['
+  - ']'
+  - '{'
+  - '}'
+  - \
+  - '~'
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  functional:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F7
+  - F8
+  - F9
+  - F12
+  - ''
+  - ''
+  - Caps Lock
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: gaming, h: toggle}
+  - F4
+  - F5
+  - F6
+  - F11
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bl BL_TOG'
+  - '&bl BL_DEC'
+  - '&bl BL_INC'
+  - ''
+  - F1
+  - F2
+  - F3
+  - F10
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  gaming:
+  - ↹
+  - Esc
+  - Q
+  - W
+  - E
+  - R
+  - F7
+  - F8
+  - F9
+  - F12
+  - ''
+  - ''
+  - F12
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - F4
+  - F5
+  - F6
+  - F11
+  - ''
+  - ''
+  - F10
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - F1
+  - F2
+  - F3
+  - F10
+  - ''
+  - ''
+  - F7
+  - F8
+  - ␣
+  - {t: ▽, type: trans}
+  - {t: gaming, h: toggle}
+  - {t: ▽, type: trans}
