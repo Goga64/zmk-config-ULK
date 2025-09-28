@@ -1,0 +1,89 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/led/led.h>
+#include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/reset.h>
+
+
+
+&led_strip {
+  //chain-length = <0>;
+  chain-length = <27>;
+  // 21 backlight + 6 glowlight
+};
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+
+
+        default_layer {
+            bindings = <
+   &kp ESC  &kp Q &kp W &kp E &kp R &kp T   &kp Y            &kp U   &kp I    &kp O    &kp SEMI &kp LC(BSPC)
+   &kp LSHFT &kp A &kp S &kp D &kp F &kp G  &kp H                 &kp J   &kp K    &kp L    &kp P      &kp DEL
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B  &kp N               &kp M   &kp COMMA &kp DOT  &kp FSLH &kp SQT
+                   &kp LGUI &mo 1 &kp SPACE                   &kp RET &mo 2 &kp LEFT_ALT
+
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+   &kp TAB &kp LA(TAB) &bootloader &sys_reset &soft_off &kp C_VOL_UP           &kp N7 &kp N8 &kp N9 &kp KP_PLUS &kp MINUS &kp KP_MULTIPLY
+   &kp LSHFT &none &kp C_PREV &kp C_PP &kp C_NEXT &kp C_VOL_DN           &kp N4 &kp N5 &kp N6 &kp N0 &kp EQUAL &kp KP_DIVIDE
+   &kp LCTRL &none &none &rgb_ug RGB_COLOR_HSB(0,0,100) &rgb_ug RGB_COLOR_HSB(359,100,100) &tog 2           &kp N1 &kp N2 &kp N3 &kp KP_DOT &kp LPAR &kp RPAR
+                      &trans &trans &kp LA(SPACE)                            &trans &trans &kp BSPC
+
+            >;
+        };
+
+        raise_layer {
+            bindings = < 
+   &kp TAB    &kp EXCL        &kp AT          &kp HASH  &kp DLLR               &kp PRCNT                &kp CARET        &kp AMPS          &kp UP    &kp RPAR   &trans   &kp BSPC
+   &kp LSHIFT &none           &none           &none     &none                  &kp BSPC                 &tog 1           &kp LEFT          &kp DOWN  &kp RIGHT  &kp PIPE &kp GRAVE
+   &kp LCTRL  &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI  &bt BT_CLR               &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LBRC  &kp RBRC   &kp BSLH &kp TILDE
+                                              &kp LEFT_ALT    &trans           &trans                   &trans           &trans            &trans
+   
+            >;
+        };
+        functional_layer {
+            bindings = <
+   &none &none &none &none &none &none                  &kp F7 &kp F8 &kp F9 &kp F12 &none &none
+   &kp CAPS &none &none &none &none &tog 4              &kp F4 &kp F5 &kp F6 &kp F11 &none &none
+   &none &none &bl BL_TOG &bl BL_DEC &bl BL_INC &none   &kp F1 &kp F2 &kp F3 &kp F10 &none &none
+                    &trans &trans &trans                &trans &trans &trans
+ 
+            >;
+        };
+
+    gaming_layer {
+            bindings = <  
+    &kp TAB   &kp ESC    &kp Q  &kp W    &kp E    &kp R                        &kp F7 &kp F8 &kp F9 &kp F12 &none &none
+   &kp F12    &kp LSHFT  &kp A  &kp S    &kp D    &kp F                        &kp F4 &kp F5 &kp F6 &kp F11 &none &none
+   &kp F10    &kp LCTRL  &kp Z  &kp X    &kp C    &kp V                        &kp F1 &kp F2 &kp F3 &kp F10 &none &none
+                                &kp F7   &kp F8   &kp SPACE                         &trans &tog 4 &trans
+
+            >;
+        };
+    
+    };
+};
