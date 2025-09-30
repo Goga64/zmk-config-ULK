@@ -142,8 +142,8 @@ layers:
   - F8
   - F9
   - F12
-  - ''
-  - ''
+  - F15
+  - F18
   - F12
   - $$mdi:apple-keyboard-shift$$
   - A
@@ -154,8 +154,8 @@ layers:
   - F5
   - F6
   - F11
-  - ''
-  - ''
+  - F14
+  - F17
   - F10
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -166,8 +166,8 @@ layers:
   - F2
   - F3
   - F10
-  - ''
-  - ''
+  - F13
+  - F16
   - F7
   - F8
   - ␣

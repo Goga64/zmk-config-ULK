@@ -5,8 +5,8 @@ layers:
   lower:
   - ↹
   - Alt+↹
-  - ''
-  - ''
+  - Boot
+  - Reset
   - '&soft_off'
   - Vol Up
   - '7'
@@ -104,8 +104,8 @@ layers:
   - Caps Lock
   - ''
   - ''
-  - ''
-  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:palette$$', type: tap_dance}
+  - RGB COLOR HSB(359,100,100)
   - {t: gaming, h: toggle}
   - F4
   - F5
@@ -114,10 +114,10 @@ layers:
   - F14
   - F17
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
+  - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
+  - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
   - ''
   - F1
   - F2
@@ -142,8 +142,8 @@ layers:
   - F8
   - F9
   - F12
-  - ''
-  - ''
+  - F15
+  - F18
   - F12
   - $$mdi:apple-keyboard-shift$$
   - A
@@ -154,8 +154,8 @@ layers:
   - F5
   - F6
   - F11
-  - ''
-  - ''
+  - F14
+  - F17
   - F10
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -166,8 +166,8 @@ layers:
   - F2
   - F3
   - F10
-  - ''
-  - ''
+  - F13
+  - F16
   - F7
   - F8
   - ␣
