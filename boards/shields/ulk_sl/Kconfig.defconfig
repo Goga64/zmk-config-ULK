@@ -1,0 +1,5 @@
+config ZMK_KEYBOARD_NAME
+    default "ulk_sl"
+
+config ZMK_SPLIT
+    default y

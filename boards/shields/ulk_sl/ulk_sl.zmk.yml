@@ -1,0 +1,13 @@
+file_format: "1"
+id: ulk
+name: ulk
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - studio
+siblings:
+  - ulk_left
+  - ulk_right
