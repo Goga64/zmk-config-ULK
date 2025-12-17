@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/Goga64
     # dongle_display
     - name: englmaxi
       url-base: https://github.com/englmaxi
