@@ -9,5 +9,5 @@ features:
   - keys
   - studio
 siblings:
-  - ulk_left
-  - ulk_right
+  - ulk_left_sl
+  - ulk_right_sl
