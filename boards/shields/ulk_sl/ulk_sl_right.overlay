@@ -5,3 +5,7 @@
  */
 
 #include "ulk_sl.dtsi"
+
+&default_transform {
+	col-offset = <21>;
+};
