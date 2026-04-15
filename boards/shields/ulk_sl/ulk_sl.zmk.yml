@@ -8,5 +8,7 @@ exposes: [i2c_oled]
 features:
   - keys
 siblings:
-  - ulk_left_sl
-  - ulk_right_sl
+  - ulk_sl_left
+  - ulk_sl_right
+  - ulk_sl_left_peripheral
+ 

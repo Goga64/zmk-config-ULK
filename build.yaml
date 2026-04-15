@@ -80,7 +80,11 @@ include:
 
   - board: nice_nano_v2
     shield: ulk_sl_left
-    artifact-name: ulk_sl_left
+    artifact-name: ulk_sl_leftv
+
+  - board: nice_nano_v2
+    shield: ulk_sl_left_peripheral
+    artifact-name: ulk_sl_left_peripheral
 
 
   - board: nice_nano_v2
