@@ -89,8 +89,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   functional:
-  - ''
-  - ''
+  - Out USB
+  - Out BLE
   - ''
   - ''
   - ''
